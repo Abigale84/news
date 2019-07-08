@@ -1,4 +1,4 @@
-package com.lq.article;
+package com.lq.comment;
 
 import com.netflix.hystrix.contrib.metrics.eventstream.HystrixMetricsStreamServlet;
 import org.springframework.boot.SpringApplication;
@@ -12,16 +12,16 @@ import org.springframework.context.annotation.ComponentScan;
 /**
  * @author qliu84
  * @version 1.0
- * @date 2019/7/8 15:39
+ * @date 2019/7/8 16:22
  */
 @EnableHystrixDashboard
 @EnableFeignClients
 @SpringCloudApplication
 @ComponentScan(basePackages = "com.lq")
-public class ArticleApplication {
+public class CommentApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ArticleApplication.class,args);
+        SpringApplication.run(CommentApplication.class,args);
     }
 
     @Bean

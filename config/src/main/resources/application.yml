@@ -9,10 +9,10 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/springcloudlynn/springcloudinactivity #配置 git 仓库地址
-          searchPaths: repo #配置仓库路径
-          username: springcloudlynn #访问 git 仓库的用户名
-          password: ly123456 #访问 git 仓库的用户密码
+          uri: https://github.com/Abigale84/news-config.git #配置 git 仓库地址
+          searchPaths: / #配置仓库路径
+          username: qliu84  #访问 git 仓库的用户名
+          password: Welcome6 #访问 git 仓库的用户密码
       label: master #配置仓库的分支
   rabbitmq:
     host: 127.0.0.1
