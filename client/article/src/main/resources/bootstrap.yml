@@ -1,11 +1,16 @@
 spring:
   cloud:
     config:
-      name: article
+      name: article,feign,database,redis,key
       label: master
       discovery:
         enabled: true
         serviceId: config
+  datasource:
+      url: jdbc:mysql://172.0.0.1:3306/news?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
 eureka:
   client:
     serviceUrl:

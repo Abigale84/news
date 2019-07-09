@@ -1,21 +1,18 @@
-server:
-  port: 8081
 spring:
-  application:
-    name: index
-    discovery:
-      enabled: true
-      serviceId: config
-#  autoconfigure:
-#    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+  cloud:
+    config:
+      name: index,feign,database,redis,key
+      label: master
+      discovery:
+        enabled: true
+        serviceId: config
   datasource:
     url: jdbc:mysql://172.0.0.1:3306/news?useUnicode=true&characterEncoding=UTF-8&useSSL=false
     username: root
     password: root
     driver-class-name: com.mysql.jdbc.Driver
-  profiles:
-    active: dev
-
+    profiles:
+      active: dev
 eureka:
   client:
     serviceUrl:
