@@ -1,4 +1,4 @@
-package com.lq.index;
+package com.lq.index.controller.open;
 
 import com.lq.common.result.SingleResult;
 import com.lq.index.request.KeyRequest;
